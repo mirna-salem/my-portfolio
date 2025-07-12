@@ -20,19 +20,19 @@ export default function HeroSection() {
 						</h1>
 						<h2 className="text-2xl md:text-4xl font-bold text-gray-900">Full Stack Developer</h2>
 						<p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-							I craft end-to-end solutions with 8+ years of experience building scalable applications and leading development teams.
+							I'm a full-stack developer with 5+ years of experience working primarily with C# and .NET. I focus on building apps that are simple to maintain and easy to use.
 						</p>
 						<p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
-							Previously Senior Full Stack Developer at <span className="text-blue-600">Stripe</span> and Tech Lead at{' '}
-							<span className="text-purple-600">Vercel</span>
+							Currently Software Developer (Full Stack) at <span className="text-blue-600">Computer Information Systems</span> and previously Researcher at{' '}
+							<span className="text-purple-600">NorthEastern Illinois University</span>
 						</p>
 					</div>
 					<div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-100 rounded-full text-blue-600 text-xs md:text-sm">TypeScript</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-100 rounded-full text-purple-600 text-xs md:text-sm">React & Next.js</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-100 rounded-full text-teal-600 text-xs md:text-sm">Node.js</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-100 rounded-full text-blue-600 text-xs md:text-sm">Python</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-100 rounded-full text-purple-600 text-xs md:text-sm">AWS</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-100 rounded-full text-blue-600 text-xs md:text-sm">C#</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-100 rounded-full text-purple-600 text-xs md:text-sm">ASP.NET Core</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-100 rounded-full text-teal-600 text-xs md:text-sm">.NET MAUI</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-100 rounded-full text-blue-600 text-xs md:text-sm">Entity Framework</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-100 rounded-full text-purple-600 text-xs md:text-sm">Azure</span>
 					</div>
 				</motion.div>
 
@@ -57,15 +57,15 @@ export default function HeroSection() {
 								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-600">
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Modern React Architectures
+										.NET MAUI Development
 									</li>
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Performance Optimization
+										Razor Pages & Blazor
 									</li>
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-										Responsive & Interactive UIs
+										MVVM Architecture
 									</li>
 								</ul>
 							</div>
@@ -82,15 +82,15 @@ export default function HeroSection() {
 								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-600">
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										API Design & Development
+										ASP.NET Core APIs
 									</li>
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Database Architecture
+										Entity Framework & SQL Server
 									</li>
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
-										Real-time Systems
+										Test-Driven Development
 									</li>
 								</ul>
 							</div>
@@ -107,15 +107,15 @@ export default function HeroSection() {
 								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-600">
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										AWS Infrastructure
+										Azure Cloud Services
 									</li>
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										CI/CD Pipelines
+										GitHub Actions & Azure DevOps
 									</li>
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
-										Scalable Architecture
+										Scalable .NET Architecture
 									</li>
 								</ul>
 							</div>
