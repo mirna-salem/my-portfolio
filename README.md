@@ -138,3 +138,9 @@ If you find these templates helpful, please consider:
 - [Buying me a coffee](https://www.buymeacoffee.com/andreiancu) ☕
 
 For issues and feature requests, please [create an issue](https://github.com/devportfoliotemplates/devportfoliotemplates/issues).
+
+## Attributions
+
+### Icons and Assets
+
+- **Favicon**: [Code icons created by Freepik - Flaticon](https://www.flaticon.com/free-icons/code)
