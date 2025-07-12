@@ -16,7 +16,7 @@ export default function HeroSection() {
 				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-8 md:mb-12">
 					<div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600">
-							David Miller
+							Mirna Salem
 						</h1>
 						<h2 className="text-2xl md:text-4xl font-bold text-gray-900">Full Stack Developer</h2>
 						<p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
