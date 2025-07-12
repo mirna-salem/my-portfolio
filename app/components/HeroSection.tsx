@@ -20,7 +20,7 @@ export default function HeroSection() {
 						</h1>
 						<h2 className="text-2xl md:text-4xl font-bold text-gray-900">Full Stack Developer</h2>
 						<p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-							I'm a full-stack developer with 5+ years of experience working primarily with C# and .NET. I focus on building apps that are simple to maintain and easy to use.
+							I&apos;m a full-stack developer with 5+ years of experience working primarily with C# and .NET. I focus on building apps that are simple to maintain and easy to use.
 						</p>
 						<p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
 							Currently Software Developer (Full Stack) at <span className="text-blue-600">Computer Information Systems</span> and previously Researcher at{' '}
