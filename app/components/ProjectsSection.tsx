@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import * as React from 'react';
 
 export default function ProjectsSection() {
 	return (
@@ -27,9 +29,9 @@ export default function ProjectsSection() {
 							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 								<div className="space-y-6">
 									<div>
-										<h3 className="text-2xl font-bold mb-4 text-gray-900">Enterprise E-commerce Platform</h3>
+										<h3 className="text-2xl font-bold mb-4 text-gray-900">Enterprise Pet Profile Platform</h3>
 										<p className="text-gray-600">
-											A high-performance e-commerce solution handling 100K+ daily transactions with real-time inventory and ML-powered recommendations.
+											A modern, cloud-native solution for managing pet profiles, featuring secure API access, image uploads, and seamless cross-platform experiences.
 										</p>
 									</div>
 
@@ -37,19 +39,19 @@ export default function ProjectsSection() {
 										<div>
 											<h4 className="text-sm font-semibold text-blue-600 mb-3">Frontend Architecture</h4>
 											<ul className="space-y-2 text-sm text-gray-600">
-												<li>• Next.js Server Components</li>
-												<li>• Real-time Cart & Inventory</li>
-												<li>• Stripe Payment Integration</li>
-												<li>• PWA with Offline Support</li>
+												<li>• .NET MAUI Cross-Platform App</li>
+												<li>• MVVM Pattern with XAML UI</li>
+												<li>• Seamless Data Sync with Azure API</li>
+												<li>• Dark/Light Theme Support</li>
 											</ul>
 										</div>
 										<div>
 											<h4 className="text-sm font-semibold text-purple-600 mb-3">Backend Systems</h4>
 											<ul className="space-y-2 text-sm text-gray-600">
-												<li>• Node.js Microservices</li>
-												<li>• Redis Caching Layer</li>
-												<li>• Kafka Event Streaming</li>
-												<li>• Elasticsearch Product Search</li>
+												<li>• ASP.NET Core (.NET 9) REST API</li>
+												<li>• Entity Framework Core with Azure SQL</li>
+												<li>• Azure Blob Storage</li>
+												<li>• Serilog Logging & Application Insights</li>
 											</ul>
 										</div>
 									</div>
@@ -57,76 +59,19 @@ export default function ProjectsSection() {
 									<div className="space-y-3">
 										<h4 className="text-sm font-semibold text-teal-600">Key Achievements</h4>
 										<ul className="space-y-2 text-sm text-gray-600">
-											<li>• 99.99% Uptime with Blue-Green Deployment</li>
-											<li>• 300ms Average API Response Time</li>
-											<li>• 45% Reduction in Infrastructure Costs</li>
+											<li>• 99.9% Uptime with Azure Deployments</li>
+											<li>• Fast API Response Times</li>
+											<li>• End-to-End CI/CD with GitHub Actions</li>
+											<li>• Secure API Key Authentication</li>
 										</ul>
 									</div>
 								</div>
 
 								<div className="bg-gray-50 rounded-xl p-6">
-									<h4 className="text-sm font-semibold text-gray-600 mb-4">System Architecture</h4>
-									<div className="aspect-[4/3] bg-white rounded-lg p-4 shadow-inner">
-										{/* Add detailed system architecture diagram here */}
-										<svg className="w-full h-full" viewBox="0 0 400 300">
-											{/* Client Layer */}
-											<g>
-												<rect x="20" y="20" width="360" height="40" rx="4" className="fill-blue-100 stroke-blue-400" strokeWidth="1" />
-												<text x="200" y="45" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Next.js Frontend (SSR + Client Components)
-												</text>
-											</g>
-
-											{/* API Layer */}
-											<g>
-												<rect x="20" y="80" width="170" height="40" rx="4" className="fill-purple-100 stroke-purple-400" strokeWidth="1" />
-												<rect x="210" y="80" width="170" height="40" rx="4" className="fill-purple-100 stroke-purple-400" strokeWidth="1" />
-												<text x="105" y="105" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Product Service
-												</text>
-												<text x="295" y="105" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Order Service
-												</text>
-											</g>
-
-											{/* Cache Layer */}
-											<g>
-												<rect x="20" y="140" width="360" height="30" rx="4" className="fill-teal-100 stroke-teal-400" strokeWidth="1" />
-												<text x="200" y="160" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Redis Cache Layer
-												</text>
-											</g>
-
-											{/* Database Layer */}
-											<g>
-												<rect x="20" y="190" width="170" height="40" rx="4" className="fill-blue-100 stroke-blue-400" strokeWidth="1" />
-												<rect x="210" y="190" width="170" height="40" rx="4" className="fill-purple-100 stroke-purple-400" strokeWidth="1" />
-												<text x="105" y="215" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Product DB (PostgreSQL)
-												</text>
-												<text x="295" y="215" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Order DB (MongoDB)
-												</text>
-											</g>
-
-											{/* Search Layer */}
-											<g>
-												<rect x="20" y="250" width="360" height="30" rx="4" className="fill-teal-100 stroke-teal-400" strokeWidth="1" />
-												<text x="200" y="270" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Elasticsearch Product Search
-												</text>
-											</g>
-
-											{/* Connection Lines */}
-											<g className="stroke-gray-400" strokeWidth="1">
-												<line x1="200" y1="60" x2="200" y2="80" />
-												<line x1="105" y1="120" x2="105" y2="140" />
-												<line x1="295" y1="120" x2="295" y2="140" />
-												<line x1="105" y1="170" x2="105" y2="190" />
-												<line x1="295" y1="170" x2="295" y2="190" />
-												<line x1="200" y1="230" x2="200" y2="250" />
-											</g>
-										</svg>
+									<h4 className="text-sm font-semibold text-gray-600 mb-4">App Screenshots</h4>
+									<div className="aspect-[4/3] bg-white rounded-lg p-4 shadow-inner flex items-center justify-center">
+										{/* Simple Carousel */}
+										<Carousel />
 									</div>
 								</div>
 							</div>
@@ -260,5 +205,93 @@ export default function ProjectsSection() {
 				</div>
 			</div>
 		</section>
+	);
+}
+
+function Carousel() {
+	const images = [
+		'/code.jpg', // Use your own images later
+		'/laptop.jpg',
+		'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80',
+	];
+	const [current, setCurrent] = useState(0);
+	const [modalOpen, setModalOpen] = useState(false);
+	const prev = () => setCurrent((current - 1 + images.length) % images.length);
+	const next = () => setCurrent((current + 1) % images.length);
+
+	// Auto-slide every 3 seconds, but only when modal is closed
+	React.useEffect(() => {
+		if (modalOpen) return; // Pause auto-advance when modal is open
+		const timer = setInterval(() => {
+			setCurrent((c) => (c + 1) % images.length);
+		}, 3000);
+		return () => clearInterval(timer);
+	}, [modalOpen, images.length]);
+
+	// Modal close on ESC
+	React.useEffect(() => {
+		if (!modalOpen) return;
+		const onKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'Escape') setModalOpen(false);
+		};
+		window.addEventListener('keydown', onKeyDown);
+		return () => window.removeEventListener('keydown', onKeyDown);
+	}, [modalOpen]);
+
+	return (
+		<div className="relative w-full h-full flex items-center justify-center">
+			<button
+				onClick={prev}
+				className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full p-2 shadow"
+				aria-label="Previous"
+			>
+				<span className="text-xl">&#8592;</span>
+			</button>
+			<img
+				src={images[current]}
+				alt={`Screenshot ${current + 1}`}
+				className="rounded-lg object-contain max-h-[250px] max-w-full mx-auto cursor-pointer"
+				style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}
+				onClick={() => setModalOpen(true)}
+			/>
+			<button
+				onClick={next}
+				className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full p-2 shadow"
+				aria-label="Next"
+			>
+				<span className="text-xl">&#8594;</span>
+			</button>
+			<div className="absolute bottom-2 left-0 right-0 flex justify-center gap-2">
+				{images.map((_, idx) => (
+					<button
+						key={idx}
+						onClick={() => setCurrent(idx)}
+						className={`w-2.5 h-2.5 rounded-full ${current === idx ? 'bg-blue-500' : 'bg-gray-300'}`}
+						aria-label={`Go to slide ${idx + 1}`}
+					/>
+				))}
+			</div>
+			{/* Modal for larger image */}
+			{modalOpen && (
+				<div
+					className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+					onClick={() => setModalOpen(false)}
+				>
+					<button
+						className="absolute top-6 right-8 text-white hover:text-gray-300 text-3xl font-bold z-10"
+						onClick={() => setModalOpen(false)}
+						aria-label="Close"
+					>
+						&times;
+					</button>
+					<img
+						src={images[current]}
+						alt={`Screenshot ${current + 1}`}
+						className="object-contain max-h-[80vh] max-w-[90vw] rounded shadow-lg"
+						onClick={e => e.stopPropagation()}
+					/>
+				</div>
+			)}
+		</div>
 	);
 }
