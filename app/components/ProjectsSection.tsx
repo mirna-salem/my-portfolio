@@ -18,7 +18,7 @@ export default function ProjectsSection() {
 				</motion.h2>
 
 				<div className="space-y-16">
-					{/* E-commerce Platform */}
+					{/* Recipe Application - now first */}
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -29,73 +29,11 @@ export default function ProjectsSection() {
 							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 								<div className="space-y-6">
 									<div>
-										<h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center gap-2">🐶 Pet Profile Application</h3>
-										<p className="text-gray-600">
-											A modern, cloud-native solution for managing pet profiles, featuring secure API access, image uploads, and seamless cross-platform experiences.
-										</p>
-									</div>
-
-									<div className="grid grid-cols-2 gap-6">
-										<div>
-											<h4 className="text-sm font-semibold text-blue-600 mb-3">Frontend Architecture</h4>
-											<ul className="space-y-2 text-sm text-gray-600">
-												<li>• .NET MAUI Cross-Platform App</li>
-												<li>• MVVM Pattern with XAML UI</li>
-												<li>• Seamless Data Sync with Azure API</li>
-												<li>• Dark/Light Theme Support</li>
-											</ul>
-										</div>
-										<div>
-											<h4 className="text-sm font-semibold text-purple-600 mb-3">Backend Systems</h4>
-											<ul className="space-y-2 text-sm text-gray-600">
-												<li>• ASP.NET Core (.NET 9) REST API</li>
-												<li>• Entity Framework Core with Azure SQL</li>
-												<li>• Azure Blob Storage</li>
-												<li>• Serilog Logging & Application Insights</li>
-											</ul>
-										</div>
-									</div>
-
-									<div className="space-y-3">
-										<h4 className="text-sm font-semibold text-teal-600">Key Achievements</h4>
-										<ul className="space-y-2 text-sm text-gray-600">
-											<li>• Reliable Production Deployment on Azure</li>
-											<li>• Optimized API Performance</li>
-											<li>• Automated CI/CD Pipeline with GitHub Actions</li>
-											<li>• Secure API Key Authentication</li>
-										</ul>
-									</div>
-								</div>
-
-								<div className="lg:col-span-1">
-									<div
-										className="rounded-lg flex items-center justify-center w-full"
-										style={{ background: 'none', padding: 0, height: 500, maxWidth: 800, minWidth: 320 }}
-									>
-										<Carousel />
-									</div>
-								</div>
-							</div>
-						</div>
-					</motion.div>
-
-					{/* Real-time Analytics Platform */}
-					<motion.div
-						initial={{ opacity: 0, y: 20 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						viewport={{ once: true }}
-						className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-lg"
-					>
-						<div className="p-8">
-							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-								<div className="space-y-6">
-									<div>
-										<h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center gap-2">🍲 Recipe Application </h3>
+										<h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center gap-2">🍲 Meal Planning & Recipe Application</h3>
 										<p className="text-gray-600">
 											A full-featured recipe and meal planning web application where users can search for recipes, generate and customize meal plans, save favorites, and track nutrition. Built with ASP.NET Core MVC, Entity Framework, and the Spoonacular API, it offers a modern, interactive experience for healthy meal planning.
 										</p>
 									</div>
-
 									<div className="grid grid-cols-2 gap-6">
 										<div>
 											<h4 className="text-sm font-semibold text-blue-600 mb-3">Frontend Architecture</h4>
@@ -116,7 +54,6 @@ export default function ProjectsSection() {
 											</ul>
 										</div>
 									</div>
-
 									<div className="space-y-3">
 										<h4 className="text-sm font-semibold text-teal-600">Key Achievements</h4>
 										<ul className="space-y-2 text-sm text-gray-600">
@@ -127,78 +64,69 @@ export default function ProjectsSection() {
 										</ul>
 									</div>
 								</div>
-
-								<div className="bg-gray-50 rounded-xl p-6">
-									<h4 className="text-sm font-semibold text-gray-600 mb-4">Data Flow Architecture</h4>
-									<div className="aspect-[4/3] bg-white rounded-lg p-4 shadow-inner">
-										<svg className="w-full h-full" viewBox="0 0 400 300">
-											{/* Data Sources */}
-											<g>
-												<rect x="20" y="20" width="110" height="30" rx="4" className="fill-blue-100 stroke-blue-400" strokeWidth="1" />
-												<rect x="145" y="20" width="110" height="30" rx="4" className="fill-blue-100 stroke-blue-400" strokeWidth="1" />
-												<rect x="270" y="20" width="110" height="30" rx="4" className="fill-blue-100 stroke-blue-400" strokeWidth="1" />
-												<text x="75" y="40" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Web Events
-												</text>
-												<text x="200" y="40" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Mobile Events
-												</text>
-												<text x="325" y="40" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													API Events
-												</text>
-											</g>
-
-											{/* Event Processing */}
-											<g>
-												<rect x="20" y="80" width="360" height="40" rx="4" className="fill-purple-100 stroke-purple-400" strokeWidth="1" />
-												<text x="200" y="105" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Kafka Event Streaming
-												</text>
-											</g>
-
-											{/* Processing Layer */}
-											<g>
-												<rect x="20" y="150" width="170" height="40" rx="4" className="fill-teal-100 stroke-teal-400" strokeWidth="1" />
-												<rect x="210" y="150" width="170" height="40" rx="4" className="fill-teal-100 stroke-teal-400" strokeWidth="1" />
-												<text x="105" y="175" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Stream Processing
-												</text>
-												<text x="295" y="175" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Batch Processing
-												</text>
-											</g>
-
-											{/* Storage Layer */}
-											<g>
-												<rect x="20" y="220" width="170" height="30" rx="4" className="fill-blue-100 stroke-blue-400" strokeWidth="1" />
-												<rect x="210" y="220" width="170" height="30" rx="4" className="fill-purple-100 stroke-purple-400" strokeWidth="1" />
-												<text x="105" y="240" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													ClickHouse
-												</text>
-												<text x="295" y="240" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													Redis Time Series
-												</text>
-											</g>
-
-											{/* API Layer */}
-											<g>
-												<rect x="20" y="270" width="360" height="30" rx="4" className="fill-teal-100 stroke-teal-400" strokeWidth="1" />
-												<text x="200" y="290" textAnchor="middle" className="fill-gray-600 text-[12px]">
-													GraphQL API Layer
-												</text>
-											</g>
-
-											{/* Connection Lines */}
-											<g className="stroke-gray-400" strokeWidth="1">
-												<line x1="75" y1="50" x2="75" y2="80" />
-												<line x1="200" y1="50" x2="200" y2="80" />
-												<line x1="325" y1="50" x2="325" y2="80" />
-												<line x1="200" y1="120" x2="200" y2="150" />
-												<line x1="105" y1="190" x2="105" y2="220" />
-												<line x1="295" y1="190" x2="295" y2="220" />
-												<line x1="200" y1="250" x2="200" y2="270" />
-											</g>
-										</svg>
+								<div className="lg:col-span-1">
+									<div
+										className="rounded-lg flex items-center justify-center w-full"
+										style={{ background: 'none', padding: 0, height: 500, maxWidth: 800, minWidth: 320 }}
+									>
+										<RecipeCarousel />
+									</div>
+								</div>
+							</div>
+						</div>
+					</motion.div>
+					{/* Pet Profile Application - now second */}
+					<motion.div
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-lg"
+					>
+						<div className="p-8">
+							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+								<div className="space-y-6">
+									<div>
+										<h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center gap-2">🐶 Pet Profile Application</h3>
+										<p className="text-gray-600">
+											A modern, cloud-native solution for managing pet profiles, featuring secure API access, image uploads, and seamless cross-platform experiences.
+										</p>
+									</div>
+									<div className="grid grid-cols-2 gap-6">
+										<div>
+											<h4 className="text-sm font-semibold text-blue-600 mb-3">Frontend Architecture</h4>
+											<ul className="space-y-2 text-sm text-gray-600">
+												<li>• .NET MAUI Cross-Platform App</li>
+												<li>• MVVM Pattern with XAML UI</li>
+												<li>• Seamless Data Sync with Azure API</li>
+												<li>• Dark/Light Theme Support</li>
+											</ul>
+										</div>
+										<div>
+											<h4 className="text-sm font-semibold text-purple-600 mb-3">Backend Systems</h4>
+											<ul className="space-y-2 text-sm text-gray-600">
+												<li>• ASP.NET Core (.NET 9) REST API</li>
+												<li>• Entity Framework Core with Azure SQL</li>
+												<li>• Azure Blob Storage</li>
+												<li>• Serilog Logging & Application Insights</li>
+											</ul>
+										</div>
+									</div>
+									<div className="space-y-3">
+										<h4 className="text-sm font-semibold text-teal-600">Key Achievements</h4>
+										<ul className="space-y-2 text-sm text-gray-600">
+											<li>• Reliable Production Deployment on Azure</li>
+											<li>• Optimized API Performance</li>
+											<li>• Automated CI/CD Pipeline with GitHub Actions</li>
+											<li>• Secure API Key Authentication</li>
+										</ul>
+									</div>
+								</div>
+								<div className="lg:col-span-1">
+									<div
+										className="rounded-lg flex items-center justify-center w-full"
+										style={{ background: 'none', padding: 0, height: 500, maxWidth: 800, minWidth: 320 }}
+									>
+										<PetProfilesCarousel />
 									</div>
 								</div>
 							</div>
@@ -210,38 +138,25 @@ export default function ProjectsSection() {
 	);
 }
 
-function Carousel() {
-	const images = [
-		'/AndroidListView.png',
-		'/WindowsListView.png',
-		'/AddPetProfile.png',
-		'/EditPetProfile.png',
-		'/DeletePetProfile.png',
-		'/Swagger.png',
-	];
-	const captions = [
-		'Android List View – Main screen on Android',
-		'Windows List View – Main screen on Windows',
-		'Add Pet Profile – Add a new pet with image upload',
-		'Edit Pet Profile – Edit existing pet details',
-		'Delete Pet Profile – Delete confirmation dialog',
-		'Swagger API – RESTful API documentation',
-	];
+type GenericCarouselProps = {
+	images: string[];
+	captions: string[];
+};
+
+function GenericCarousel({ images, captions }: GenericCarouselProps) {
 	const [current, setCurrent] = useState(0);
 	const [modalOpen, setModalOpen] = useState(false);
 	const prev = () => setCurrent((current - 1 + images.length) % images.length);
 	const next = () => setCurrent((current + 1) % images.length);
 
-	// Auto-slide every 3 seconds, but only when modal is closed
 	React.useEffect(() => {
-		if (modalOpen) return; // Pause auto-advance when modal is open
+		if (modalOpen) return;
 		const timer = setInterval(() => {
 			setCurrent((c) => (c + 1) % images.length);
 		}, 3000);
 		return () => clearInterval(timer);
 	}, [modalOpen, images.length]);
 
-	// Modal close on ESC
 	React.useEffect(() => {
 		if (!modalOpen) return;
 		const onKeyDown = (e: KeyboardEvent) => {
@@ -289,7 +204,6 @@ function Carousel() {
 					/>
 				))}
 			</div>
-			{/* Modal for larger image */}
 			{modalOpen && (
 				<div
 					className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
@@ -317,4 +231,44 @@ function Carousel() {
 			)}
 		</div>
 	);
+}
+
+function PetProfilesCarousel() {
+	const images = [
+		'/Pet Profile Application Pictures/AndroidListView.png',
+		'/Pet Profile Application Pictures/AddPetProfile.png',
+		'/Pet Profile Application Pictures/EditPetProfile.png',
+		'/Pet Profile Application Pictures/DeletePetProfile.png',
+		'/Pet Profile Application Pictures/Swagger.png',
+	];
+	const captions = [
+		'Android List View – Main screen on Android',
+		'Add Pet Profile – Add a new pet with image upload',
+		'Edit Pet Profile – Edit existing pet details',
+		'Delete Pet Profile – Delete confirmation dialog',
+		'Swagger API – RESTful API documentation',
+	];
+	return <GenericCarousel images={images} captions={captions} />;
+}
+
+function RecipeCarousel() {
+	const images = [
+		'/Recipe Application Pictures/Home.png',
+		'/Recipe Application Pictures/Search.png',
+		'/Recipe Application Pictures/MealPlan.png',
+		'/Recipe Application Pictures/Explore1.png',
+		'/Recipe Application Pictures/Explore2.png',
+		'/Recipe Application Pictures/SignInPage.png',
+		'/Recipe Application Pictures/MealPlanSideBar.png',
+	];
+	const captions = [
+		'Home – Main dashboard for recipes and meal plans',
+		'Search – Find recipes by ingredients or name',
+		'Meal Plan – View your planned meals',
+		'Explore – Browse featured recipes (1)',
+		'Explore – Browse featured recipes (2)',
+		'Sign In Page – User authentication',
+		'Meal Plan Sidebar – Quick access to meal plan',
+	];
+	return <GenericCarousel images={images} captions={captions} />;
 }
