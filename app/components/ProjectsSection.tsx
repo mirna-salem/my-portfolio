@@ -29,7 +29,7 @@ export default function ProjectsSection() {
 							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 								<div className="space-y-6">
 									<div>
-										<h3 className="text-2xl font-bold mb-4 text-gray-900">Enterprise Pet Profile Platform</h3>
+										<h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center gap-2">🐶 Pet Profile Application</h3>
 										<p className="text-gray-600">
 											A modern, cloud-native solution for managing pet profiles, featuring secure API access, image uploads, and seamless cross-platform experiences.
 										</p>
@@ -59,18 +59,19 @@ export default function ProjectsSection() {
 									<div className="space-y-3">
 										<h4 className="text-sm font-semibold text-teal-600">Key Achievements</h4>
 										<ul className="space-y-2 text-sm text-gray-600">
-											<li>• 99.9% Uptime with Azure Deployments</li>
-											<li>• Fast API Response Times</li>
-											<li>• End-to-End CI/CD with GitHub Actions</li>
+											<li>• Reliable Production Deployment on Azure</li>
+											<li>• Optimized API Performance</li>
+											<li>• Automated CI/CD Pipeline with GitHub Actions</li>
 											<li>• Secure API Key Authentication</li>
 										</ul>
 									</div>
 								</div>
 
-								<div className="bg-gray-50 rounded-xl p-6">
-									<h4 className="text-sm font-semibold text-gray-600 mb-4">App Screenshots</h4>
-									<div className="aspect-[4/3] bg-white rounded-lg p-4 shadow-inner flex items-center justify-center">
-										{/* Simple Carousel */}
+								<div className="lg:col-span-1">
+									<div
+										className="rounded-lg flex items-center justify-center w-full"
+										style={{ background: 'none', padding: 0, height: 500, maxWidth: 800, minWidth: 320 }}
+									>
 										<Carousel />
 									</div>
 								</div>
@@ -89,39 +90,40 @@ export default function ProjectsSection() {
 							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 								<div className="space-y-6">
 									<div>
-										<h3 className="text-2xl font-bold mb-4 text-gray-900">Real-time Analytics Platform</h3>
+										<h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center gap-2">🍲 Recipe Application </h3>
 										<p className="text-gray-600">
-											A scalable analytics platform processing 1M+ events per minute with real-time dashboards and ML-powered insights.
+											A full-featured recipe and meal planning web application where users can search for recipes, generate and customize meal plans, save favorites, and track nutrition. Built with ASP.NET Core MVC, Entity Framework, and the Spoonacular API, it offers a modern, interactive experience for healthy meal planning.
 										</p>
 									</div>
 
 									<div className="grid grid-cols-2 gap-6">
 										<div>
-											<h4 className="text-sm font-semibold text-blue-600 mb-3">Frontend Features</h4>
+											<h4 className="text-sm font-semibold text-blue-600 mb-3">Frontend Architecture</h4>
 											<ul className="space-y-2 text-sm text-gray-600">
-												<li>• Real-time Data Visualization</li>
-												<li>• Interactive Dashboards</li>
-												<li>• Custom Chart Components</li>
-												<li>• Data Export Tools</li>
+												<li>• Modern ASP.NET Core MVC with Razor Views for dynamic UI</li>
+												<li>• Responsive, mobile-friendly design using Bootstrap</li>
+												<li>• Intuitive recipe and ingredient search interface</li>
+												<li>• Interactive meal plan generator with dietary filters</li>
 											</ul>
 										</div>
 										<div>
-											<h4 className="text-sm font-semibold text-purple-600 mb-3">Backend Pipeline</h4>
+											<h4 className="text-sm font-semibold text-purple-600 mb-3">Backend Systems</h4>
 											<ul className="space-y-2 text-sm text-gray-600">
-												<li>• Apache Kafka Streams</li>
-												<li>• ClickHouse Analytics DB</li>
-												<li>• Python Data Processing</li>
-												<li>• Redis Time Series</li>
+												<li>• Robust ASP.NET Core (.NET 8) backend with Entity Framework Core</li>
+												<li>• Secure user authentication and authorization with ASP.NET Core Identity</li>
+												<li>• Persistent data storage using Azure SQL Database</li>
+												<li>• Real-time integration with Spoonacular API for up-to-date recipes</li>
 											</ul>
 										</div>
 									</div>
 
 									<div className="space-y-3">
-										<h4 className="text-sm font-semibold text-teal-600">Performance Metrics</h4>
+										<h4 className="text-sm font-semibold text-teal-600">Key Achievements</h4>
 										<ul className="space-y-2 text-sm text-gray-600">
-											<li>• 1M+ Events/Minute Processing</li>
-											<li>• Sub-second Query Response</li>
-											<li>• 99.99% Data Accuracy</li>
+											<li>• Full-stack app with secure user accounts</li>
+											<li>• Real-time recipe & meal plan integration</li>
+											<li>• Azure cloud deployment with SQL Database</li>
+											<li>• Intuitive, responsive UI for meal planning</li>
 										</ul>
 									</div>
 								</div>
@@ -210,9 +212,20 @@ export default function ProjectsSection() {
 
 function Carousel() {
 	const images = [
-		'/code.jpg', // Use your own images later
-		'/laptop.jpg',
-		'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80',
+		'/AndroidListView.png',
+		'/WindowsListView.png',
+		'/AddPetProfile.png',
+		'/EditPetProfile.png',
+		'/DeletePetProfile.png',
+		'/Swagger.png',
+	];
+	const captions = [
+		'Android List View – Main screen on Android',
+		'Windows List View – Main screen on Windows',
+		'Add Pet Profile – Add a new pet with image upload',
+		'Edit Pet Profile – Edit existing pet details',
+		'Delete Pet Profile – Delete confirmation dialog',
+		'Swagger API – RESTful API documentation',
 	];
 	const [current, setCurrent] = useState(0);
 	const [modalOpen, setModalOpen] = useState(false);
@@ -239,28 +252,33 @@ function Carousel() {
 	}, [modalOpen]);
 
 	return (
-		<div className="relative w-full h-full flex items-center justify-center">
-			<button
-				onClick={prev}
-				className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full p-2 shadow"
-				aria-label="Previous"
-			>
-				<span className="text-xl">&#8592;</span>
-			</button>
-			<img
-				src={images[current]}
-				alt={`Screenshot ${current + 1}`}
-				className="rounded-lg object-contain max-h-[250px] max-w-full mx-auto cursor-pointer"
-				style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}
-				onClick={() => setModalOpen(true)}
-			/>
-			<button
-				onClick={next}
-				className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full p-2 shadow"
-				aria-label="Next"
-			>
-				<span className="text-xl">&#8594;</span>
-			</button>
+		<div className="relative w-full h-full flex flex-col items-center justify-center">
+			<div className="w-full flex items-center justify-center">
+				<button
+					onClick={prev}
+					className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full p-2 shadow"
+					aria-label="Previous"
+				>
+					<span className="text-xl">&#8592;</span>
+				</button>
+				<img
+					src={images[current]}
+					alt={captions[current]}
+					className="rounded-lg object-contain max-h-[500px] max-w-full mx-auto cursor-pointer"
+					style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}
+					onClick={() => setModalOpen(true)}
+				/>
+				<button
+					onClick={next}
+					className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full p-2 shadow"
+					aria-label="Next"
+				>
+					<span className="text-xl">&#8594;</span>
+				</button>
+			</div>
+			<div className="mt-4 text-center text-sm text-gray-700 font-medium">
+				{captions[current]}
+			</div>
 			<div className="absolute bottom-2 left-0 right-0 flex justify-center gap-2">
 				{images.map((_, idx) => (
 					<button
@@ -284,12 +302,17 @@ function Carousel() {
 					>
 						&times;
 					</button>
-					<img
-						src={images[current]}
-						alt={`Screenshot ${current + 1}`}
-						className="object-contain max-h-[80vh] max-w-[90vw] rounded shadow-lg"
-						onClick={e => e.stopPropagation()}
-					/>
+					<div className="flex flex-col items-center justify-center">
+						<img
+							src={images[current]}
+							alt={captions[current]}
+							className="object-contain max-h-[80vh] max-w-[90vw] rounded shadow-lg"
+							onClick={e => e.stopPropagation()}
+						/>
+						<div className="mt-4 text-center text-lg text-white font-semibold">
+							{captions[current]}
+						</div>
+					</div>
 				</div>
 			)}
 		</div>
