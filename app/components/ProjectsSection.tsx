@@ -107,7 +107,7 @@ export default function ProjectsSection() {
 												<li>• ASP.NET Core (.NET 9) REST API</li>
 												<li>• Entity Framework Core with Azure SQL</li>
 												<li>• Azure Blob Storage</li>
-												<li>• Serilog Logging & Application Insights</li>
+												<li>• Comprehensive API documentation with Swagger/OpenAPI</li>
 											</ul>
 										</div>
 									</div>
@@ -123,8 +123,8 @@ export default function ProjectsSection() {
 								</div>
 								<div className="lg:col-span-1">
 									<div
-										className="rounded-lg flex items-center justify-center w-full"
-										style={{ background: 'none', padding: 0, height: 500, maxWidth: 800, minWidth: 320 }}
+										className="rounded-lg flex items-center justify-center w-full py-12"
+										style={{ background: 'none', height: 600, maxWidth: 800, minWidth: 320 }}
 									>
 										<PetProfilesCarousel />
 									</div>
@@ -168,33 +168,33 @@ function GenericCarousel({ images, captions }: GenericCarouselProps) {
 
 	return (
 		<div className="relative w-full h-full flex flex-col items-center justify-center">
-			<div className="w-full flex items-center justify-center">
-				<button
-					onClick={prev}
-					className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full p-2 shadow"
-					aria-label="Previous"
-				>
-					<span className="text-xl">&#8592;</span>
-				</button>
-				<img
-					src={images[current]}
+			<div className="w-full flex items-center justify-center relative px-16">
+			<button
+				onClick={prev}
+				className="absolute left-0 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg border border-gray-200 z-10 transition-colors"
+				aria-label="Previous"
+			>
+				<span className="text-xl text-gray-700">&#8592;</span>
+			</button>
+			<img
+				src={images[current]}
 					alt={captions[current]}
 					className="rounded-lg object-contain max-h-[500px] max-w-full mx-auto cursor-pointer"
-					style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}
-					onClick={() => setModalOpen(true)}
-				/>
-				<button
-					onClick={next}
-					className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-100 hover:bg-gray-200 rounded-full p-2 shadow"
-					aria-label="Next"
-				>
-					<span className="text-xl">&#8594;</span>
-				</button>
+				style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}
+				onClick={() => setModalOpen(true)}
+			/>
+			<button
+				onClick={next}
+				className="absolute right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg border border-gray-200 z-10 transition-colors"
+				aria-label="Next"
+			>
+				<span className="text-xl text-gray-700">&#8594;</span>
+			</button>
 			</div>
 			<div className="mt-4 text-center text-sm text-gray-700 font-medium">
 				{captions[current]}
 			</div>
-			<div className="absolute bottom-2 left-0 right-0 flex justify-center gap-2">
+			<div className="mt-4 flex justify-center gap-2">
 				{images.map((_, idx) => (
 					<button
 						key={idx}
@@ -217,12 +217,12 @@ function GenericCarousel({ images, captions }: GenericCarouselProps) {
 						&times;
 					</button>
 					<div className="flex flex-col items-center justify-center">
-						<img
-							src={images[current]}
+					<img
+						src={images[current]}
 							alt={captions[current]}
-							className="object-contain max-h-[80vh] max-w-[90vw] rounded shadow-lg"
-							onClick={e => e.stopPropagation()}
-						/>
+						className="object-contain max-h-[80vh] max-w-[90vw] rounded shadow-lg"
+						onClick={e => e.stopPropagation()}
+					/>
 						<div className="mt-4 text-center text-lg text-white font-semibold">
 							{captions[current]}
 						</div>
@@ -235,14 +235,20 @@ function GenericCarousel({ images, captions }: GenericCarouselProps) {
 
 function PetProfilesCarousel() {
 	const images = [
-		'/Pet Profile Application Pictures/AndroidListView.png',
+		'/Pet Profile Application Pictures/Light Mode - AndroidListView.png',
+		'/Pet Profile Application Pictures/Night Mode - AndroidListView.png',
+		'/Pet Profile Application Pictures/Light Mode - WindowsListView.png',
+		'/Pet Profile Application Pictures/Dark Mode - WindowsListView.png',
 		'/Pet Profile Application Pictures/AddPetProfile.png',
 		'/Pet Profile Application Pictures/EditPetProfile.png',
 		'/Pet Profile Application Pictures/DeletePetProfile.png',
 		'/Pet Profile Application Pictures/Swagger.png',
 	];
 	const captions = [
-		'Android List View – Main screen on Android',
+		'Android List View – Light mode on Android',
+		'Android List View – Night mode on Android',
+		'Windows List View – Light mode on Windows',
+		'Windows List View – Dark mode on Windows',
 		'Add Pet Profile – Add a new pet with image upload',
 		'Edit Pet Profile – Edit existing pet details',
 		'Delete Pet Profile – Delete confirmation dialog',
