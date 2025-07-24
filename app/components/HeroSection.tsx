@@ -18,21 +18,21 @@ export default function HeroSection() {
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600">
 							Mirna Salem
 						</h1>
-						<h2 className="text-2xl md:text-4xl font-bold text-gray-900">Full Stack Developer</h2>
-						<p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+						<h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Full Stack Developer</h2>
+						<p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
 							I&apos;m a full-stack developer with 5+ years of experience working primarily with C# and .NET. I focus on building apps that are simple to maintain and easy to use.
 						</p>
-						<p className="text-base md:text-lg text-gray-500 max-w-2xl mx-auto">
-							Currently Software Developer (Full Stack) at <span className="text-blue-600">Computer Information Systems</span> and previously Researcher at{' '}
-							<span className="text-purple-600">NorthEastern Illinois University</span>
+						<p className="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+							Currently Software Developer (Full Stack) at <span className="text-blue-600 dark:text-blue-400">Computer Information Systems</span> and previously Researcher at{' '}
+							<span className="text-purple-600 dark:text-purple-400">NorthEastern Illinois University</span>
 						</p>
 					</div>
 					<div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-100 rounded-full text-blue-600 text-xs md:text-sm">C#</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-100 rounded-full text-purple-600 text-xs md:text-sm">ASP.NET Core</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-100 rounded-full text-teal-600 text-xs md:text-sm">.NET MAUI</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-100 rounded-full text-blue-600 text-xs md:text-sm">Entity Framework</span>
-						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-100 rounded-full text-purple-600 text-xs md:text-sm">Azure</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full text-blue-600 dark:text-blue-400 text-xs md:text-sm">C#</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-100 dark:bg-purple-900/30 rounded-full text-purple-600 dark:text-purple-400 text-xs md:text-sm">ASP.NET Core</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-teal-100 dark:bg-teal-900/30 rounded-full text-teal-600 dark:text-teal-400 text-xs md:text-sm">.NET MAUI</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full text-blue-600 dark:text-blue-400 text-xs md:text-sm">Entity Framework</span>
+						<span className="px-3 md:px-4 py-1.5 md:py-2 bg-purple-100 dark:bg-purple-900/30 rounded-full text-purple-600 dark:text-purple-400 text-xs md:text-sm">Azure</span>
 					</div>
 				</motion.div>
 
@@ -42,19 +42,19 @@ export default function HeroSection() {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{ delay: 0.3 }}
-						className="bg-white/50 backdrop-blur-sm rounded-lg border border-gray-200 p-4 md:p-8 shadow-lg"
+						className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-lg border border-gray-200 dark:border-gray-700 p-4 md:p-8 shadow-lg"
 					>
 						<div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
 							{/* Frontend Layer */}
 							<div
 								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'frontend' ? 'bg-blue-50 border-blue-200' : 'bg-gray-50 hover:bg-gray-100 border-transparent'
+									selectedStack === 'frontend' ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-200 dark:border-blue-600' : 'bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 border-transparent'
 								}`}
 								onMouseEnter={() => setSelectedStack('frontend')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-blue-600">Frontend Development</h3>
-								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-600">
+								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-blue-600 dark:text-blue-400">Frontend Development</h3>
+								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-600 dark:text-gray-300">
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
 										.NET MAUI Development
@@ -73,13 +73,13 @@ export default function HeroSection() {
 							{/* Backend Layer */}
 							<div
 								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'backend' ? 'bg-purple-50 border-purple-200' : 'bg-gray-50 hover:bg-gray-100 border-transparent'
+									selectedStack === 'backend' ? 'bg-purple-50 dark:bg-purple-900/20 border-purple-200 dark:border-purple-600' : 'bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 border-transparent'
 								}`}
 								onMouseEnter={() => setSelectedStack('backend')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-purple-600">Backend Development</h3>
-								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-600">
+								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-purple-600 dark:text-purple-400">Backend Development</h3>
+								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-600 dark:text-gray-300">
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-purple-500 rounded-full" />
 										ASP.NET Core APIs
@@ -98,13 +98,13 @@ export default function HeroSection() {
 							{/* DevOps Layer */}
 							<div
 								className={`p-4 md:p-6 rounded-lg transition-colors border-2 ${
-									selectedStack === 'devops' ? 'bg-teal-50 border-teal-200' : 'bg-gray-50 hover:bg-gray-100 border-transparent'
+									selectedStack === 'devops' ? 'bg-teal-50 dark:bg-teal-900/20 border-teal-200 dark:border-teal-600' : 'bg-gray-50 dark:bg-gray-700/50 hover:bg-gray-100 dark:hover:bg-gray-700 border-transparent'
 								}`}
 								onMouseEnter={() => setSelectedStack('devops')}
 								onMouseLeave={() => setSelectedStack(null)}
 							>
-								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-teal-600">DevOps & Cloud</h3>
-								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-600">
+								<h3 className="text-lg md:text-xl font-semibold mb-3 md:mb-4 text-teal-600 dark:text-teal-400">DevOps & Cloud</h3>
+								<ul className="space-y-1.5 md:space-y-2 text-xs md:text-sm text-gray-600 dark:text-gray-300">
 									<li className="flex items-center gap-2">
 										<div className="w-1.5 h-1.5 bg-teal-500 rounded-full" />
 										Azure Cloud Services

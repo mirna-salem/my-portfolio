@@ -12,7 +12,7 @@ export default function ProjectsSection() {
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					viewport={{ once: true }}
-					className="text-3xl font-bold mb-16 text-center text-gray-900"
+					className="text-3xl font-bold mb-16 text-center text-gray-900 dark:text-gray-100"
 				>
 					Full Stack Projects
 				</motion.h2>
@@ -23,21 +23,21 @@ export default function ProjectsSection() {
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
-						className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-lg"
+						className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg"
 					>
 						<div className="p-8">
 							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 								<div className="space-y-6">
 									<div>
-										<h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center gap-2">🍲 Meal Planning & Recipe Application</h3>
-										<p className="text-gray-600">
+										<h3 className="text-2xl font-bold mb-4 text-blue-700 dark:text-blue-400 flex items-center gap-2">🍲 Meal Planning & Recipe Application</h3>
+										<p className="text-gray-600 dark:text-gray-300">
 											A full-featured recipe and meal planning web application where users can search for recipes, generate and customize meal plans, save favorites, and track nutrition. Built with ASP.NET Core MVC, Entity Framework, and the Spoonacular API, it offers a modern, interactive experience for healthy meal planning.
 										</p>
 									</div>
 									<div className="grid grid-cols-2 gap-6">
 										<div>
-											<h4 className="text-sm font-semibold text-blue-600 mb-3">Frontend Architecture</h4>
-											<ul className="space-y-2 text-sm text-gray-600">
+											<h4 className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-3">Frontend Architecture</h4>
+											<ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
 												<li>• Modern ASP.NET Core MVC with Razor Views for dynamic UI</li>
 												<li>• Responsive, mobile-friendly design using Bootstrap</li>
 												<li>• Intuitive recipe and ingredient search interface</li>
@@ -45,8 +45,8 @@ export default function ProjectsSection() {
 											</ul>
 										</div>
 										<div>
-											<h4 className="text-sm font-semibold text-purple-600 mb-3">Backend Systems</h4>
-											<ul className="space-y-2 text-sm text-gray-600">
+											<h4 className="text-sm font-semibold text-purple-600 dark:text-purple-400 mb-3">Backend Systems</h4>
+											<ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
 												<li>• Robust ASP.NET Core (.NET 8) backend with Entity Framework Core</li>
 												<li>• Secure user authentication and authorization with ASP.NET Core Identity</li>
 												<li>• Persistent data storage using Azure SQL Database</li>
@@ -55,8 +55,8 @@ export default function ProjectsSection() {
 										</div>
 									</div>
 									<div className="space-y-3">
-										<h4 className="text-sm font-semibold text-teal-600">Key Achievements</h4>
-										<ul className="space-y-2 text-sm text-gray-600">
+										<h4 className="text-sm font-semibold text-teal-600 dark:text-teal-400">Key Achievements</h4>
+										<ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
 											<li>• Full-stack app with secure user accounts</li>
 											<li>• Real-time recipe & meal plan integration</li>
 											<li>• Azure cloud deployment with SQL Database</li>
@@ -80,21 +80,21 @@ export default function ProjectsSection() {
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
-						className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-lg"
+						className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-lg"
 					>
 						<div className="p-8">
 							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 								<div className="space-y-6">
 									<div>
-										<h3 className="text-2xl font-bold mb-4 text-blue-700 flex items-center gap-2">🐶 Pet Profile Application</h3>
-										<p className="text-gray-600">
+										<h3 className="text-2xl font-bold mb-4 text-blue-700 dark:text-blue-400 flex items-center gap-2">🐶 Pet Profile Application</h3>
+										<p className="text-gray-600 dark:text-gray-300">
 											A modern, cloud-native solution for managing pet profiles, featuring secure API access, image uploads, and seamless cross-platform experiences.
 										</p>
 									</div>
 									<div className="grid grid-cols-2 gap-6">
 										<div>
-											<h4 className="text-sm font-semibold text-blue-600 mb-3">Frontend Architecture</h4>
-											<ul className="space-y-2 text-sm text-gray-600">
+											<h4 className="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-3">Frontend Architecture</h4>
+											<ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
 												<li>• .NET MAUI Cross-Platform App</li>
 												<li>• MVVM Pattern with XAML UI</li>
 												<li>• Seamless Data Sync with Azure API</li>
@@ -102,8 +102,8 @@ export default function ProjectsSection() {
 											</ul>
 										</div>
 										<div>
-											<h4 className="text-sm font-semibold text-purple-600 mb-3">Backend Systems</h4>
-											<ul className="space-y-2 text-sm text-gray-600">
+											<h4 className="text-sm font-semibold text-purple-600 dark:text-purple-400 mb-3">Backend Systems</h4>
+											<ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
 												<li>• ASP.NET Core (.NET 9) REST API</li>
 												<li>• Entity Framework Core with Azure SQL</li>
 												<li>• Azure Blob Storage</li>
@@ -112,8 +112,8 @@ export default function ProjectsSection() {
 										</div>
 									</div>
 									<div className="space-y-3">
-										<h4 className="text-sm font-semibold text-teal-600">Key Achievements</h4>
-										<ul className="space-y-2 text-sm text-gray-600">
+										<h4 className="text-sm font-semibold text-teal-600 dark:text-teal-400">Key Achievements</h4>
+										<ul className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
 											<li>• Reliable Production Deployment on Azure</li>
 											<li>• Optimized API Performance</li>
 											<li>• Automated CI/CD Pipeline with GitHub Actions</li>
@@ -171,10 +171,10 @@ function GenericCarousel({ images, captions }: GenericCarouselProps) {
 			<div className="w-full flex items-center justify-center relative px-16">
 			<button
 				onClick={prev}
-				className="absolute left-0 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg border border-gray-200 z-10 transition-colors"
+				className="absolute left-0 top-1/2 -translate-y-1/2 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-full p-3 shadow-lg border border-gray-200 dark:border-gray-600 z-10 transition-colors"
 				aria-label="Previous"
 			>
-				<span className="text-xl text-gray-700">&#8592;</span>
+				<span className="text-xl text-gray-700 dark:text-gray-300">&#8592;</span>
 			</button>
 			<img
 				src={images[current]}
@@ -185,24 +185,24 @@ function GenericCarousel({ images, captions }: GenericCarouselProps) {
 			/>
 			<button
 				onClick={next}
-				className="absolute right-0 top-1/2 -translate-y-1/2 bg-white hover:bg-gray-50 rounded-full p-3 shadow-lg border border-gray-200 z-10 transition-colors"
+				className="absolute right-0 top-1/2 -translate-y-1/2 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 rounded-full p-3 shadow-lg border border-gray-200 dark:border-gray-600 z-10 transition-colors"
 				aria-label="Next"
 			>
-				<span className="text-xl text-gray-700">&#8594;</span>
+				<span className="text-xl text-gray-700 dark:text-gray-300">&#8594;</span>
 			</button>
 			</div>
-			<div className="mt-4 text-center text-sm text-gray-700 font-medium">
+			<div className="mt-4 text-center text-sm text-gray-700 dark:text-gray-300 font-medium">
 				{captions[current]}
 			</div>
 			<div className="mt-4 flex justify-center gap-2">
-				{images.map((_, idx) => (
-					<button
-						key={idx}
-						onClick={() => setCurrent(idx)}
-						className={`w-2.5 h-2.5 rounded-full ${current === idx ? 'bg-blue-500' : 'bg-gray-300'}`}
-						aria-label={`Go to slide ${idx + 1}`}
-					/>
-				))}
+											{images.map((_, idx) => (
+								<button
+									key={idx}
+									onClick={() => setCurrent(idx)}
+									className={`w-2.5 h-2.5 rounded-full ${current === idx ? 'bg-blue-500' : 'bg-gray-300 dark:bg-gray-600'}`}
+									aria-label={`Go to slide ${idx + 1}`}
+								/>
+							))}
 			</div>
 			{modalOpen && (
 				<div
