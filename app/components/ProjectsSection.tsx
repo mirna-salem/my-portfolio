@@ -29,7 +29,7 @@ export default function ProjectsSection() {
 							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 								<div className="space-y-6">
 									<div>
-										<h3 className="text-2xl font-bold mb-4 text-blue-700 dark:text-blue-400 flex items-center gap-2">🍲 Meal Planning & Recipe Application</h3>
+										<h3 className="text-2xl font-bold mb-4 text-blue-700 dark:text-blue-400 flex items-center gap-2">Meal Planning & Recipe Application</h3>
 										<p className="text-gray-600 dark:text-gray-300">
 											A full-featured recipe and meal planning web application where users can search for recipes, generate and customize meal plans, save favorites, and track nutrition. Built with ASP.NET Core MVC, Entity Framework, and the Spoonacular API, it offers a modern, interactive experience for healthy meal planning.
 										</p>
@@ -86,7 +86,7 @@ export default function ProjectsSection() {
 							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 								<div className="space-y-6">
 									<div>
-										<h3 className="text-2xl font-bold mb-4 text-blue-700 dark:text-blue-400 flex items-center gap-2">🐶 Pet Profile Application</h3>
+										<h3 className="text-2xl font-bold mb-4 text-blue-700 dark:text-blue-400 flex items-center gap-2">Pet Profile Application</h3>
 										<p className="text-gray-600 dark:text-gray-300">
 											A modern, cloud-native solution for managing pet profiles, featuring secure API access, image uploads, and seamless cross-platform experiences.
 										</p>
