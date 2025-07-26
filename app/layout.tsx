@@ -33,12 +33,12 @@ export const metadata: Metadata = {
 		'DevOps',
 		'System Architecture',
 		'Web Development',
-		'[Your Name]',
+		'Mirna Salem',
 	],
 	authors: [{ name: 'Mirna Salem' }],
-	creator: '[Your Name]',
+	creator: 'Mirna Salem',
 	openGraph: {
-		title: '[Your Name] - Full-Stack Developer Portfolio',
+		title: 'Mirna Salem - Full-Stack Developer Portfolio',
 		description:
 			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
 		url: 'https://your-domain.com',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 				url: '/og-image.jpg',
 				width: 1200,
 				height: 630,
-				alt: '[Your Name] - Full-Stack Developer Portfolio',
+				alt: 'Mirna Salem - Full-Stack Developer Portfolio',
 			},
 		],
 		locale: 'en_US',
@@ -56,10 +56,10 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		title: '[Your Name] - Full-Stack Developer',
+		title: 'Mirna Salem - Full-Stack Developer',
 		description:
 			'Passionate full-stack developer creating complete web solutions. Explore my projects and technical expertise across the entire development stack.',
-		creator: '@yourusername',
+		creator: '@mirna-salem',
 		images: ['/og-image.jpg'],
 	},
 	robots: {
