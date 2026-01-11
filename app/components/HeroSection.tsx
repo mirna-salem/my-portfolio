@@ -18,13 +18,13 @@ export default function HeroSection() {
 						<h1 className="text-4xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600">
 							Mirna Salem
 						</h1>
-						<h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Full Stack Developer</h2>
+						<h2 className="text-2xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Full-Stack Developer</h2>
 						<p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
 							I&apos;m a full-stack developer with 5+ years of experience working primarily with C# and .NET. I focus on building apps that are simple to maintain and easy to use.
 						</p>
 						<p className="text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
-							Currently Software Developer (Full Stack) at <span className="text-blue-600 dark:text-blue-400">Computer Information Systems</span> and previously Researcher at{' '}
-							<span className="text-purple-600 dark:text-purple-400">NorthEastern Illinois University</span>
+							Currently seeking new opportunities. Previously worked as a Software Developer at <span className="text-blue-600 dark:text-blue-400">Computer Information Systems</span> and{' '}
+							<span className="text-purple-600 dark:text-purple-400">Northeastern Illinois University</span>.
 						</p>
 					</div>
 					<div className="flex flex-wrap justify-center gap-2 md:gap-3 mb-6 md:mb-8">
